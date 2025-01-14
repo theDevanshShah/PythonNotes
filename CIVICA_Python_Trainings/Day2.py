@@ -73,3 +73,31 @@ print(someWord.startswith('H')) # expecting true
 print(someWord.startswith('h')) # expecting false
 print(someWord.format('Devanshi')) # expecting Hello Devansh
 print(someWord.index('D')) # expecting 6
+
+# Local Variables Vs Global Variables
+
+# Variables that are defined inside a function are local variables
+# Example
+
+def  method_one():
+    num1 = 10
+    print("Inside method_one:", num1)
+    
+# def method_two():
+#    print("Inside method_two:", num1) # this will not run & it will give compile time error
+    
+method_one()
+# method_two()
+
+# Variables that are defined outside a function are global variables
+# Example
+
+num2 = 20
+def method_three():
+    print("Inside method_three:", num2)
+
+def method_four():
+    print("Inside method_four:", num2)
+    
+method_three()
+method_four()
