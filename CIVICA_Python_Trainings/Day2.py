@@ -154,3 +154,21 @@ boolean1 = True
 inum6 = int(boolean1)
 print("Before Type Casting : ",boolean1,"is the type of :",type(boolean1))
 print("After Type Casting :  ",inum6,"is the type of :",type(inum6))
+
+# Handling User Input
+
+# When The Input Type Is String
+stringValue = input("Enter some string: ")
+print("You entered: ", stringValue)
+
+# When The Input Type Is Integer
+intValue = int(input("Enter some integer: "))
+print("You entered: ", intValue , "which is type of ",type(intValue))
+
+# When the Input type is float
+floatValue = float(input("Enter some float: "))
+print("You entered: ", floatValue , "which is type of ",type(floatValue))
+
+# When the input type is boolean
+boolValue = bool(input("Enter some boolean value here : "))
+print("You have entered : ", boolValue , "which is type of ",type(boolValue))
