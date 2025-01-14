@@ -48,4 +48,28 @@ print("x:", x)
 # Examples of invalid variable names: 1variable, variable-name
 
 # That's it for the basics of variables in Python!
-# I am doing this changes to publish dev branch on remote
+
+# Variable methods in Python
+
+# Strings have many useful methods
+greeting = "hello world"
+print("Uppercase:", greeting.upper())
+print("Capitalize:", greeting.capitalize())
+print("Replace:", greeting.replace("world", "there"))
+print("Split:", greeting.split())
+
+# my example for strings
+someWord = "Hello Devansh"
+print(someWord)
+print("Uppper Case : ", someWord.upper())
+print("Capitalize : ", someWord.capitalize())
+print("Replace : ", someWord.replace("Devansh", "Dev"))
+print("Split : ", someWord.split())
+print("Split Line : " , someWord.splitlines()) # expecting ['Hello Devansh']
+print("For counting a specific character's occurance ",someWord.count('l'))
+print(someWord.endswith('h')) # expecting true
+print(someWord.endswith('d')) # expecting false
+print(someWord.startswith('H')) # expecting true
+print(someWord.startswith('h')) # expecting false
+print(someWord.format('Devanshi')) # expecting Hello Devansh
+print(someWord.index('D')) # expecting 6
