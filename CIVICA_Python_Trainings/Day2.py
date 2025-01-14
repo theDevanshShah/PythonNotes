@@ -76,7 +76,7 @@ print(someWord.index('D')) # expecting 6
 
 # Local Variables Vs Global Variables
 
-# Variables that are defined inside a function are local variables
+# Variables that are defined inside a function are LOCAL variables
 # Example
 
 def  method_one():
@@ -89,7 +89,7 @@ def  method_one():
 method_one()
 # method_two()
 
-# Variables that are defined outside a function are global variables
+# Variables that are defined outside a function are GLOBAL variables
 # Example
 
 num2 = 20
@@ -101,3 +101,56 @@ def method_four():
     
 method_three()
 method_four()
+
+# Now we can do the same in different method
+
+def method_five():
+    global num3
+    num3 = 30
+    print("Inside method_five:", num3)
+    
+def method_six():
+    print("Inside method_six:", num3)
+    
+method_five()
+method_six()
+
+# Type Casting
+
+# 1. int to float
+inum = 10
+fnum = float(inum)
+
+print("Before Type Casting:", inum," is of type", type(inum))
+print("After Type Casting:", fnum," is of type", type(fnum))
+
+# 2. float to int
+fnum2 = 10.122
+inum2 = int(fnum2)
+print("Before Type Casting : ",fnum2 ,"is type of ",type(fnum2))
+print("After Type Casting :",inum2," is type of ",type(inum2))
+
+# 3. int to string
+inum3 = 13
+string1 = str(inum3)
+print("Before Casting : ",inum3,"is type of ",type(inum3))
+print("After Type Casting ",string1,"is type of ",type(string1))
+
+# 4. string to int
+string2 = "123"
+inum4 = int(string2)
+print("Before Type Casting : ",string2," is the type of : ",type(string2))
+print("After Type Casting ",inum4,"is the type of : ",type(inum4))
+
+# 5. int to boolean
+inum5 = 20
+bool1 = bool(inum5)
+print("Before Type Casting : ",inum5," is the type of :", type(inum5))
+print("Before Type Casting : ",bool1," is the type of :", type(bool1))
+
+
+# 6. Boolean to into int
+boolean1 = True
+inum6 = int(boolean1)
+print("Before Type Casting : ",boolean1,"is the type of :",type(boolean1))
+print("After Type Casting :  ",inum6,"is the type of :",type(inum6))
