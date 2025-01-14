@@ -1,4 +1,4 @@
-
+'''
 # Lesson on Variables in Python
 
 # Variables are used to store data that can be used later in the program.
@@ -172,3 +172,91 @@ print("You entered: ", floatValue , "which is type of ",type(floatValue))
 # When the input type is boolean
 boolValue = bool(input("Enter some boolean value here : "))
 print("You have entered : ", boolValue , "which is type of ",type(boolValue))
+'''
+# Operators in python
+
+# 1. Arithmetic Operators
+num1 = 10
+num2 = 5
+
+add = num1 + num2
+sub = num1 - num2
+mul = num1 * num2
+div = num1 / num2
+mod = num1 % num2
+exp = num1 ** num2
+
+print("Addition:", add)
+print("Subtraction:", sub)
+print("Multiplication:", mul)
+print("Division:", div)
+print("Modulus:", mod)
+print("Exponent:", exp)
+
+# 2. Comparison Operators
+
+num3 = 10
+num4 = 5
+
+print("Equal:", num3 == num4)
+print("Not Equal :", num3 != num4)
+print("Greater Than : ", num3 > num4)
+print("Less Than : ", num3 < num4)
+print("Greater Than Or Equal To : ", num3 >= num4)
+print("Less Than Or Equal To : ", num3 <= num4)
+
+# 3. Logical Operators
+
+bool1 = True
+bool2 = False
+
+print("AND:", bool1 and bool2)
+print("OR:", bool1 or bool2)
+print("NOT:", not bool1)
+
+# 4. Assignment Operators
+
+num5 = 10
+num5 += 5
+print("Addition Assignment:", num5)
+
+num5 -= 5
+print("Subtraction Assignment:", num5)
+
+num5 *= 5
+print("Multiplication Assignment:", num5)
+
+num5 /= 5
+print("Division Assignment:", num5)
+
+num5 %= 5
+print("Modulus Assignment:", num5)
+
+num5 **= 5
+print("Exponent Assignment:", num5)
+
+# 5. Identity Operators
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print("Is:", x is z)
+print("Is Not:", x is not y)
+
+# same example but with different values
+
+a = 10
+b = 5
+c = a
+print("Is : ",a is c)
+print("Is Not : ",a is not b)
+
+# 6. Membership Operators
+
+fruits = ["apple", "banana"]
+
+print("In:", "apple" in fruits)
+print("Not In:", "orange" not in fruits)
+print("In:", "bananaa" in fruits)
+print("Not In:", "banana" not in fruits)
