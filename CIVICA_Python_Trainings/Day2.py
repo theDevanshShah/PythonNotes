@@ -1,4 +1,3 @@
-'''
 # Lesson on Variables in Python
 
 # Variables are used to store data that can be used later in the program.
@@ -172,7 +171,7 @@ print("You entered: ", floatValue , "which is type of ",type(floatValue))
 # When the input type is boolean
 boolValue = bool(input("Enter some boolean value here : "))
 print("You have entered : ", boolValue , "which is type of ",type(boolValue))
-'''
+
 # Operators in python
 
 # 1. Arithmetic Operators
