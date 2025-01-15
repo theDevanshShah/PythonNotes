@@ -1,3 +1,4 @@
+import traceback
 # Strings in python
 
 # Strings are immutable in python
@@ -108,3 +109,33 @@ asciiString = "This is ASCII!"
 print("Is ASCII : ", asciiString.isascii()) # For True Case
 nonAsciiString = "This is not ASCII! 😊"
 print("Is ASCII : ", nonAsciiString.isascii()) # For False Case
+
+# Exception Handling In Python
+# try, except, else, finally
+
+# try block - contains the code that might raise an exception
+# except block - contains the code that handles the exception
+# else block - contains the code that is executed if the try block does not raise an exception
+# finally block - contains the code that is always executed
+
+# Example
+
+var1 = int(input("Enter the first number: "))
+var2 = int(input("Enter the second number: "))
+
+try:
+    result = var1/var2
+    print("Var1 Divided By Var2 = ",result)
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+    traceback.print_exc()
+except ValueError:
+    print("Invalid input!")
+    traceback.print_exc() 
+except Exception as e:
+    print("An error occurred! {e}")
+    traceback.print_exc()
+else:
+    print("Division successful!")
+finally:
+    print("Execution completed!")
