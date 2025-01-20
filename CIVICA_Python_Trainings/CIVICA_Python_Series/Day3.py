@@ -1,4 +1,5 @@
 import traceback
+
 # Strings in python
 
 # Strings are immutable in python
@@ -139,7 +140,7 @@ else:
     print("Division successful!")
 finally:
     print("Execution completed!")
-    
+   
  # __________________________________________________________________________________________________________________________________________________________________________________________________________________
  
 ''' 
@@ -151,9 +152,7 @@ finally:
    -> Changable ( Can be changed after creating them)
    -> Can Be Duplicate
    -> It is written with square brackets
-   
-'''
-
+'''   
 # Playing with lists in python
 
 myFirstList = [10,10.5,"Pizza"]
@@ -162,3 +161,71 @@ numbers_list = [1, 2, 3, 4, 5, 6, 7, 1.2, 1.3, 4.5, 6.7, 5.5]
 chars_list = ['a', 'b', 'c', 'A', 'B', 'C']
 strings_list = ['Abc', 'ABC', 'abc']
 mixed_data_list = [True, 5.5, '5.5', 'True', False, 143]
+
+mainList = [1,2,3,4,5,6,7,8,9,10,"Dev","Data","Science"]
+
+if "Dev" in mainList:
+    print("Dev is in the list")
+else:
+    print("Dev is not in the list")
+    
+    
+if "Devansh" in mainList:
+    print("Devansh is in the list")
+else:
+    print("Devansh is not in the list")
+    
+    
+# Accessing elements of a list
+
+# 1. Accessing elements using positive indexing
+print(mainList[0]) # 1
+print(mainList[1]) # 2
+print(mainList[2]) # 3
+print(mainList[3]) # 4
+print(mainList[4]) # 5
+
+# 2. Accessing elements using negative indexing (Reverse Indexing)
+print(mainList[-1]) # 10
+print(mainList[-2]) # 9
+print(mainList[-3]) # 8
+print(mainList[-4]) # 7
+print(mainList[-5]) # 6
+
+'''
+Now here in negative indexing,
+it will become easier if we use len() 
+as we have mainList[] here
+if i want to access mainList[-1] then
+i can also visualize it in this way print(mainList(len(mainList)-1))
+'''
+
+# Slicing a list
+print(mainList[:]) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Dev', 'Data', 'Science']
+print(mainList[0:5]) # [1, 2, 3, 4, 5]
+print(mainList[5:]) # [6, 7, 8, 9, 10, 'Dev', 'Data', 'Science']
+print(mainList[:5]) # [1, 2, 3, 4, 5]
+print(mainList[-5:]) # [6, 7, 8, 9, 10, 'Dev', 'Data', 'Science']
+print(mainList[:-5]) # [1, 2, 3, 4, 5, 6, 7, 8]
+
+# Changing elements of a list
+mainList[0] = 100
+print(mainList) # [100, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Dev', 'Data', 'Science']
+
+# List comprehension
+# List comprehension is a concise way to create lists on to go
+# Syntax: [expression for item in iterable if condition]
+
+# Example
+
+basicList = [i for i in range(10)]
+print(basicList)
+
+basicList2 = [i**i for i in range(10)]
+print(basicList2)
+
+basicList3 = [i for i in range(10) if i%2==0]
+print(basicList3)
+
+listOfSquares = [i**2 for i in range(1, 11)]
+print(listOfSquares)
