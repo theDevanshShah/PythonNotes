@@ -227,5 +227,16 @@ print(basicList2)
 basicList3 = [i for i in range(10) if i%2==0]
 print(basicList3)
 
-listOfSquares = [i**2 for i in range(1, 11)]
-print(listOfSquares)
+# listOfSquares = [i**2 for i in range(1, 11)]
+# print(listOfSquares)
+
+# List Methods
+
+list1 = [1,2,3,4,5]
+print(list1)
+
+
+# 1. append() - adds an element to the end of the list
+list1.append("Python")
+print(list1)
+
