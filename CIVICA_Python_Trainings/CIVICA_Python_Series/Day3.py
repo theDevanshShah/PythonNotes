@@ -139,3 +139,26 @@ else:
     print("Division successful!")
 finally:
     print("Execution completed!")
+    
+ # __________________________________________________________________________________________________________________________________________________________________________________________________________________
+ 
+''' 
+ DATA STRUCTURES IN PYTHON
+ 
+   1. List
+   List is a collection of items / values which is
+   -> Ordered   ( Maintains the insertion order)
+   -> Changable ( Can be changed after creating them)
+   -> Can Be Duplicate
+   -> It is written with square brackets
+   
+'''
+
+# Playing with lists in python
+
+myFirstList = [10,10.5,"Pizza"]
+# Examples of different types of lists with descriptive names
+numbers_list = [1, 2, 3, 4, 5, 6, 7, 1.2, 1.3, 4.5, 6.7, 5.5]
+chars_list = ['a', 'b', 'c', 'A', 'B', 'C']
+strings_list = ['Abc', 'ABC', 'abc']
+mixed_data_list = [True, 5.5, '5.5', 'True', False, 143]
