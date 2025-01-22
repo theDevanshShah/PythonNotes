@@ -184,6 +184,7 @@ mul = num1 * num2
 div = num1 / num2
 mod = num1 % num2
 exp = num1 ** num2
+floorDivision = num1 // num2
 
 print("Addition:", add)
 print("Subtraction:", sub)
@@ -191,6 +192,7 @@ print("Multiplication:", mul)
 print("Division:", div)
 print("Modulus:", mod)
 print("Exponent:", exp)
+print("Floor Division:", floorDivision)
 
 # 2. Comparison Operators
 
