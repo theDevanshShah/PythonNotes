@@ -304,3 +304,63 @@ evenNumbers = [2,4,6,8,10]
 allNumbers = oddNumbers + evenNumbers
 allNumbers.sort()
 print(allNumbers)
+
+'''
+2. Tuple
+
+Tuple is a collection of items / values which is
+-> Ordered
+-> Unchangable
+-> Can Be Duplicate
+-> It is written with round brackets
+
+'''
+
+# Example
+myFirstTuple = (1,2,3,4,5,"Dev","Data","Science",6.9,True)
+print(myFirstTuple)
+
+# Playing with tuples in python
+
+# Accessing elements of a tuple
+
+# 1. Accessing elements using positive indexing
+print(myFirstTuple[0]) # 1
+print(myFirstTuple[1]) # 2
+print(myFirstTuple[2]) # 3
+
+# 2. Accessing elements using negative indexing (Reverse Indexing)
+print(myFirstTuple[-1]) # True
+print(myFirstTuple[-2]) # 6.9
+print(myFirstTuple[-3]) # Science
+
+# Slicing a tuple
+print(myFirstTuple[:]) # (1, 2, 3, 4, 5, 'Dev', 'Data', 'Science', 6.9, True)
+print(myFirstTuple[0:5]) # (1, 2, 3, 4, 5)
+print(myFirstTuple[5:]) # ('Dev', 'Data', 'Science', 6.9, True)
+
+# Changing elements of a tuple
+# myFirstTuple[0] = 100 # This will throw an error as tuples are unchangable
+
+# Tuple Methods
+
+# 1. count() - counts the number of occurrences of a specified element
+print(myFirstTuple.count(5))
+
+# 2. index() - returns the index of the first occurrence of a specified element
+print(myFirstTuple.index(5))
+
+# 3. len() - returns the length of the tuple
+print(len(myFirstTuple))
+
+# 4. max() - returns the maximum value in the tuple
+onlyNumbersTuple = (1,2,3,4,5)
+#  print(max(myFirstTuple))
+print(max(onlyNumbersTuple))
+
+# 5. min() - returns the minimum value in the tuple
+print(min(onlyNumbersTuple))
+
+# del() - deletes the tuple
+del myFirstTuple
+# print(myFirstTuple) # This will throw an error as myFirstTuple is deleted
